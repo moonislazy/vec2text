@@ -27,7 +27,7 @@ def load_msmarco_corpus() -> datasets.Dataset:
     return dataset_dict["train"]
 
 def load_wikitext_2() -> datasets.Dataset:
-    return datasets.load_dataset("mikasenghaas/wikitext-2 ")
+    return datasets.load_dataset("mikasenghaas/wikitext-2")
 
 def create_omi_ex(ex: Dict[str, str]) -> Dict[str, str]:
     ex["text"] = ex["user"]
